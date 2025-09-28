@@ -17,12 +17,10 @@ echo "Who is running the script : $USER"
 echio "User's home directory is : $HOME"
 
 # To know the script's PID
-echo "Script PID is : $PPID"
+echo "Script PID is : $PID"
 
 sleep 50 & # background process
 
 # To know the PID of the last background process
 echo "Last background process PID is : $!"
 
-# To know the status of the last background process
-echo "Last background process status is : $?"
