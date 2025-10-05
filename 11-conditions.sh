@@ -21,4 +21,6 @@ elif [ $((NUMBER)) -eq 7 ]; then
     echo "Given number $NUMBER is PRIME Number"
 elif [ $((NUMBER)) -eq 11 ]; then
     echo "Given number $NUMBER is PRIME Number"
+else
+    echo "Given number $NUMBER is NOT PRIME Number"
 fi
