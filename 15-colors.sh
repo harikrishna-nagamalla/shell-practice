@@ -36,7 +36,7 @@ if [ $? -ne 0 ]; then
     dnf install nginx -y
     Validate $? "nginx"
 else
-    echo "Installing $2 is... $Y SKIPPING $N"
+    echo -e "Installing $2 is... $Y SKIPPING $N"
 fi
 
 dnf list installed python3
@@ -44,7 +44,7 @@ if [ $? -ne 0 ]; then
     dnf install python3 -y
     Validate $? "python3"
 else
-    echo "Instlling $2 is... $Y SKIPPING $N"
+    echo -e "Instlling $2 is... $Y SKIPPING $N"
 fi
 
 dnf list installed httpd
@@ -52,5 +52,5 @@ if [ $? -ne 0 ]; then
     dnf install httpd -y
     Validate $? "httpd"
 else
-    echo "Installing $2 is... $Y SKIPPING $N"
+    echo -e "Installing $2 is... $Y SKIPPING $N"
 fi
