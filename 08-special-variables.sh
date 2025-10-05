@@ -14,7 +14,7 @@ echo "Current working directory is : $PWD"
 echo "Who is running the script : $USER"
 
 # User's home directory
-echio "User's home directory is : $HOME"
+echo "User's home directory is : $HOME"
 
 # To know the script's PID
 echo "Script PID is : $$"
