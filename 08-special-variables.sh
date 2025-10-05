@@ -7,20 +7,20 @@ echo "All variables passed in to the script are : $@"
 # To give the script name
 echo "Script Name is : $0"
 
-# # To know the current working directory in a script
-# echo "Current working directory is : $PWD"
+# To know the current working directory in a script
+echo "Current working directory is : $PWD"
 
-# # Which user is running the script
-# echo "Who is running the script : $USER"
+# Which user is running the script
+echo "Who is running the script : $USER"
 
-# # User's home directory
-# echio "User's home directory is : $HOME"
+# User's home directory
+echio "User's home directory is : $HOME"
 
-# # To know the script's PID
-# echo "Script PID is : $$"
+# To know the script's PID
+echo "Script PID is : $$"
 
-# sleep 50 & # background process
+sleep 50 & # background process
 
-# # To know the PID of the last background process
-# echo "Last background process PID is : $!"
+# To know the PID of the last background process
+echo "Last background process PID is : $!"
 
