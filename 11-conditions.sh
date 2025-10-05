@@ -17,11 +17,11 @@ if [ $((NUMBER)) -eq 2 ]; then
     echo "Given number $NUMBER is PRIME Number"
 elif [ $((NUMBER)) -eq 3 ]; then
     echo "Given number $NUMBER is PRIME Number"
-elif[ $((NUMBER)) -eq 5 ]; then
+elif [ $((NUMBER)) -eq 5 ]; then
     echo "Given number $NUMBER is PRIME Number"
-elif[ $((NUMBER)) -eq 7 ]; then
+elif [ $((NUMBER)) -eq 7 ]; then
     echo "Given number $NUMBER is PRIME Number"
-elif[ $((NUMBER)) -eq 11 ]; then
+elif [ $((NUMBER)) -eq 11 ]; then
     echo "Given number $NUMBER is PRIME Number"
 fi
 
