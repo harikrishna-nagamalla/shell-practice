@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo "Enter the Number: "
-
 read NUMBER
 
 # if [ $((NUMBER %2)) -eq 0 ]; then
@@ -14,16 +13,19 @@ read NUMBER
 
 if [ $((NUMBER)) -eq 1 ]; then
     echo "Given number $NUMBER is PRIME Number"
-elif[ $((NUMBER)) -eq 2 ]; then
+if [ $((NUMBER)) -eq 2 ]; then
     echo "Given number $NUMBER is PRIME Number"
-elif[ $((NUMBER)) -eq 3 ]; then
+elif [ $((NUMBER)) -eq 3 ]; then
     echo "Given number $NUMBER is PRIME Number"
-elif[ $((NUMBER)) -eq 5 ]; then
+elif [ $((NUMBER)) -eq 5 ]; then
     echo "Given number $NUMBER is PRIME Number"
-elif[ $((NUMBER)) -eq 7 ]; then
+elif [ $((NUMBER)) -eq 7 ]; then
     echo "Given number $NUMBER is PRIME Number"
-elif[ $((NUMBER)) -eq 11 ]; then
+elif [ $((NUMBER)) -eq 11 ]; then
     echo "Given number $NUMBER is PRIME Number"
 fi
 
+# if [ $((NUMBER)) eq 2 ] || [ $((NUMBER)) eq 3 ] || [ $((NUMBER)) eq 5 ] || [ $((NUMBER)) eq 7 ] || [ $((NUMBER)) eq 11 ]; then
+#     echo "Given number $NUMBER is PRIME Number" 
+# fi
 
