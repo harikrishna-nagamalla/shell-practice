@@ -22,10 +22,10 @@ fi
 Validate() {
 
     if [ $1 -ne 0 ]; then
-        echo -e "ERROR :: Installing $2 is... $R FAILURE $N" | tee -a $LOG_FILE
+        echo -e "ERROR :: Installing $2 is... $R FAILURE $N"
         exit 1
     else
-        echo -e "Installing $2 is... $G SUCCESS $N" | tee -a $LOG_FILE
+        echo -e "Installing $2 is... $G SUCCESS $N"
     fi
     
 }
@@ -35,7 +35,7 @@ if [ $? -ne 0 ]; then
     dnf install mysql -y &>>$LOG_FILE
     Validate $? "MYSQL"
 else
-    echo -e "MySQL already exists... $Y SKIPPING $N" | tee -a $LOG_FILE
+    echo -e "MySQL already exists... $Y SKIPPING $N"
 fi
 
 dnf list installed nginx &>>$LOG_FILE
@@ -43,7 +43,7 @@ if [ $? -ne 0 ]; then
     dnf install nginx -y &>>$LOG_FILE
     Validate $? "nginx"
 else
-    echo -e "Nginx already exists... $Y SKIPPING $N" | tee -a $LOG_FILE
+    echo -e "Nginx already exists... $Y SKIPPING $N"
 fi
 
 dnf list installed python3 &>>$LOG_FILE
@@ -51,5 +51,5 @@ if [ $? -ne 0 ]; then
     dnf install python3 -y &>>$LOG_FILE
     Validate $? "python3"
 else
-    echo -e "Python3 already exists... $Y SKIPPING $N" | tee -a $LOG_FILE
+    echo -e "Python3 already exists... $Y SKIPPING $N"
 fi
