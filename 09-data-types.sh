@@ -8,7 +8,7 @@ NUMBER2=200
 
 SUM=$(($NUMBER1+$NUMBER2)) 
 
-echo "Sum is : ${SUM}" # here, shell understood & performed arithmetic operation only and excluded $NAME. considered as 0
+echo "Sum is : {$SUM}" # here, shell understood & performed arithmetic operation only and excluded $NAME. considered as 0
 
 # # size 4, max. index 3
 # LEADERS=("Modi" "Trump" "Trudo" "Putin")
