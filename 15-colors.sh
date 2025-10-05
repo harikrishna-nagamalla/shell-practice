@@ -28,7 +28,7 @@ if [ $? -ne 0 ]4; then
     dnf install mysql -y
     Validate $? "MYSQL"
 else
-    echo "Installin $2 is... $Y SKIPPING $N"
+    echo -e "Installing $2 is... $Y SKIPPING $N"
 fi
 
 dnf list installed nginx
