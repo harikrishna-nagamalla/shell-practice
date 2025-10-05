@@ -43,4 +43,5 @@ do
         Validate $? "$package"
     else
         echo -e "$package already exists... $Y SKIPPING $N"
+    fi
 done
