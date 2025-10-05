@@ -4,8 +4,8 @@
 echo "All variables passed in to the script are : $*"  # will ask this question in interviews
 echo "All variables passed in to the script are : $@"
 
-# # To give the script name
-# echo "Script Name is : $0"
+# To give the script name
+echo "Script Name is : $0"
 
 # # To know the current working directory in a script
 # echo "Current working directory is : $PWD"
