@@ -46,11 +46,3 @@ if [ $? -ne 0 ]; then
 else
     echo -e "Instlling $2 is... $Y SKIPPING $N"
 fi
-
-dnf list installed httpd
-if [ $? -ne 0 ]; then
-    dnf install httpd -y
-    Validate $? "httpd"
-else
-    echo -e "Installing $2 is... $Y SKIPPING $N"
-fi
