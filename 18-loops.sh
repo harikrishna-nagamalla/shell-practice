@@ -35,5 +35,12 @@ Validate() {
 for package in $@;
 
 do
-    echo "Package name is : $package"
+    # Check if package is already installed or not
+    dnf list installed $package &>>$LOG_FILE
+
+    if [ $? -ne 0 ]; then
+        dnf install $package -y &>>$LOG_FILE
+        Validate $? "$package"
+    else
+        echo -e "$package already exists... $Y SKIPPING $N"
 done
